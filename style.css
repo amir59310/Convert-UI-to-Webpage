@@ -1,43 +1,50 @@
 @font-face {
     font-family: aviny;
-    src: url("font/aviny.ttf") format("TTF");
+    src: url("P:\Programing Project\Log-in Page UI conveted To Web\font") format("TTF");
 }
-body, html{
+
+body,
+html {
     height: 100%;
     width: 100%;
-    background: linear-gradient(151deg, rgba(70,176,152,1) 9%, rgba(255,185,207,0.8239670868347339) 51%, rgba(0,212,255,1) 94%);
+    background: linear-gradient(151deg, rgba(70, 176, 152, 1) 9%, rgba(255, 185, 207, 0.8239670868347339) 51%, rgba(0, 212, 255, 1) 94%);
     background-repeat: no-repeat;
-    position: fixed;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
     margin: 0 auto;
 }
-.bg{
+
+.bg {
     width: 400px;
     height: 810px;
     margin: 0 auto;
-    top: 55px;
-    border-radius:30px ;
-    border:none;
-    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    border: none;
+    position: absolute;
     border-radius: 55px;
     background: #e0e0e0;
-    box-shadow:  -20px 20px 60px #504f4f,
-             20px -20px 50px #c7c5c5;
-                 
+    box-shadow: -20px 20px 60px #504f4f ,
+                 20px -20px 50px #c7c5c5;
 
 }
 
-.nav{
+.nav {
     width: 100%;
     height: 50px;
     position: relative;
     border-top: none;
     border-radius: 55px 55px 0px 0px;
     /* background-color: red; */
-    
+
 
 }
 
-.nav h1{
+.nav h1 {
     position: relative;
     font-size: 15px;
     top: 15px;
@@ -45,56 +52,62 @@ body, html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: inline;
 }
-.icon{
+
+.icon {
     display: inline-block;
     float: right;
     position: relative;
     top: 15px;
     right: 15px;
-  
+
 }
-.icon1{
+
+.icon1 {
     position: absolute;
     width: 22px;
     right: 20px;
 }
-.icon2{
+
+.icon2 {
     position: absolute;
     top: 2px;
     width: 11px;
     right: 70px;
 }
-.icon3{
+
+.icon3 {
     position: absolute;
     top: 2px;
     width: 16px;
     right: 48px;
 }
 
-.header{
+.header {
     width: 100%;
     height: 100px;
     /* background-color: rgba(255,185,207,0.8239670868347339); */
     position: relative;
 }
-.header h1{
+
+.header h1 {
     text-align: left;
     margin-left: 12px;
     margin-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(67, 110, 238, 1);
     display: inline-block;
-    
+
 }
-.btn-back{
+
+.btn-back {
     width: 11px;
     float: left;
     position: relative;
     left: 22px;
-    top:10px;
+    top: 10px;
 }
 
-.content{
+.content {
     width: 100%;
     height: 550px;
     /* background-color: rgb(70,176,152); */
@@ -102,7 +115,7 @@ body, html{
 
 }
 
-.content a{
+.content a {
     position: absolute;
     top: 400px;
     left: 200px;
@@ -112,15 +125,16 @@ body, html{
     color: black;
     text-decoration: none;
     transition: all ease .5s;
-    
-}
-.content a:hover{
-    color: rgb(20, 131, 134);
-    text-shadow: 1px 1px 10px rgb(110, 255, 255);
-    
+
 }
 
-.name-in{
+.content a:hover {
+    color: rgb(20, 131, 134);
+    text-shadow: 1px 1px 10px rgb(110, 255, 255);
+
+}
+
+.name-in {
     height: 35px;
     width: 270px;
     position: absolute;
@@ -128,6 +142,7 @@ body, html{
     background: transparent;
     border-radius: 10px;
     top: 100px;
+    
     /* background: transparent; */
     border: none;
     border-bottom: 1px solid rgba(108, 114, 116, 0.377);
@@ -135,36 +150,39 @@ body, html{
     font-family: aviny;
     font-size: 25px;
     text-align: center;
-    transition:all ease 0.7s;
+    transition: all ease 0.7s;
 
 }
-.name-in:hover{
+
+.name-in:hover {
     border-bottom: 1px solid rgb(0, 136, 170);
-    
+
 }
-.name-style{
+
+.name-style {
     position: absolute;
-    top:85px;
+    top: 85px;
     left: 38px;
     font-size: 20px;
     font-family: aviny;
     color: rgba(109, 109, 109, 0.473);
 }
 
-.email-style{
-    position:absolute ;
+.email-style {
+    position: absolute;
     top: 187px;
     left: 37px;
     font-size: 20px;
     font-family: aviny;
     color: rgba(109, 109, 109, 0.473);
-    
+
 
 
 }
-.email-in{
+
+.email-in {
     position: relative;
-    top:70px;
+    top: 70px;
     height: 35px;
     width: 270px;
     left: 35px;
@@ -177,13 +195,14 @@ body, html{
     font-family: aviny;
     font-size: 25px;
     text-align: center;
-    transition:all ease 0.7s;
+    transition: all ease 0.7s;
 }
-.email-in:hover{
+
+.email-in:hover {
     border-bottom: 1px solid rgb(0, 136, 170);
 }
 
-.password-style{
+.password-style {
     position: relative;
     top: 220px;
     left: 37px;
@@ -192,7 +211,8 @@ body, html{
     color: rgba(109, 109, 109, 0.473);
 
 }
-.password-in{
+
+.password-in {
 
     position: relative;
     top: 120px;
@@ -201,7 +221,7 @@ body, html{
     left: 35px;
     background: transparent;
     border-radius: 10px;
-    top:200px;
+    top: 200px;
     border: none;
     border-bottom: 1px solid rgba(108, 114, 116, 0.377);
     outline: none;
@@ -211,27 +231,30 @@ body, html{
     transition: all ease 0.7s;
 
 }
-.password-in:hover{
+
+.password-in:hover {
     border-bottom: 1px solid rgb(0, 136, 170);
-    
-    
+
+
 }
-.btn{
+
+.btn {
     width: 100%;
     height: 100px;
     /* background-color: saddlebrown; */
     position: absolute;
     top: 450px;
-    
+
 }
-.signup{
+
+.signup {
     width: 320px;
     height: 60px;
     margin: 0;
     position: absolute;
     top: 450px;
     left: 40px;
-    background:rgb(67, 110, 238) ;
+    background: rgb(67, 110, 238);
     border: none;
     border-radius: 30px;
     font-family: aviny;
@@ -239,12 +262,14 @@ body, html{
     color: #ffff;
     transition: ease-in-out 0.7s;
 }
-.signup:hover{
-    box-shadow:-9px 9px 35px #666666,
-    9px -9px 35px #ffffff;
-    
+
+.signup:hover {
+    box-shadow: -9px 9px 35px #666666,
+        9px -9px 35px #ffffff;
+
 }
-.pointer{
+
+.pointer {
     width: 7.5px;
     margin: 0;
     position: absolute;
@@ -253,24 +278,26 @@ body, html{
     background: ;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 110px;
     border: none;
-    border-radius: 0px 0px 55px 55px  ;
+    border-radius: 0px 0px 55px 55px;
     /* background-color: khaki; */
-    position:relative;
+    position: relative;
     top: 550px;
 }
-.footer p{
+
+.footer p {
     position: absolute;
-    top:-45px;
+    top: -45px;
     left: 93px;
     font-family: aviny;
     font-size: 25px;
 
 }
-.facebook{
+
+.facebook {
     width: 20px;
     position: relative;
     float: right;
@@ -278,11 +305,13 @@ body, html{
     right: 130px;
     transition: all ease 0.4s;
 }
-.facebook:hover{
-    box-shadow:  -13px 13px 26px #b3b3b3,
-             13px -13px 26px #ffffff;
+
+.facebook:hover {
+    box-shadow: -13px 13px 26px #b3b3b3,
+        13px -13px 26px #ffffff;
 }
-.gmail{
+
+.gmail {
     position: relative;
     width: 23px;
     float: left;
@@ -290,11 +319,13 @@ body, html{
     left: 120px;
     transition: all ease 0.4s;
 }
-.gmail:hover{
-    box-shadow:  -13px 13px 26px #b3b3b3,
-    13px -13px 26px #ffffff;
+
+.gmail:hover {
+    box-shadow: -13px 13px 26px #b3b3b3,
+        13px -13px 26px #ffffff;
 }
-.line{
+
+.line {
     width: 200px;
     position: relative;
     top: 70px;
